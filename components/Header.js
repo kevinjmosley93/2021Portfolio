@@ -4,8 +4,13 @@ import { Nav, Navbar } from 'react-bootstrap'
 const Header = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
-        <Navbar.Brand href='#home'>Kevin J Mosley</Navbar.Brand>
+      <Navbar
+        sticky='top'
+        collapseOnSelect
+        expand='lg'
+        bg='dark'
+        variant='dark'>
+        <Navbar.Brand href='/'>Kevin J Mosley</Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='ml-auto'>
