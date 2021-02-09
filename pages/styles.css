@@ -1,3 +1,12 @@
+@import 'reset.css';
+
+body {
+  background-color: #9fa5ac;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -5,4 +14,56 @@
   outline: none;
   border: none;
   box-shadow: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: 1fr;
+  grid-column-gap: 3rem;
+  height: 500px;
+  width: 100%;
+  place-items: center;
+}
+
+.leftContent img {
+  object-fit: contain;
+}
+.rightContent {
+  height: 80%;
+  padding: 0.8rem;
+  line-height: 2.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.rightContent h1 {
+  font-size: 2rem;
+}
+.rightContent p {
+  font-size: 1rem;
+}
+@media only screen and (max-width: 786px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    grid-row-gap: 1rem;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .rightContent {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .rightContent h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .rightContent p {
+    font-size: 0.7rem;
+  }
 }
