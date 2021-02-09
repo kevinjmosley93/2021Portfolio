@@ -3,7 +3,14 @@ import { Col, Container, Image, Jumbotron, Row, Button } from 'react-bootstrap'
 export default function Hero() {
   return (
     <Container className='mt-4'>
-      <Row>
+      <Row className='m-auto'>
+        <Col sm={12} lg={4}>
+          <Image
+            height='300px'
+            width='300px'
+            src='https://i.imgur.com/yJdlrwq.png'
+          />
+        </Col>
         <Col sm={12} lg={8}>
           <h1>Hey, I'm Kevin!</h1>
           <p>
@@ -16,13 +23,6 @@ export default function Hero() {
               Learn more
             </Button>
           </p>
-        </Col>
-        <Col sm={12} lg={4}>
-          <Image
-            height='300px'
-            width='300px'
-            src='https://i.imgur.com/GDsN4LQ.jpg'
-          />
         </Col>
       </Row>
     </Container>
