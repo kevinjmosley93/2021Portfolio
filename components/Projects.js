@@ -13,7 +13,7 @@ const skills = [
 const Projects = () => {
   return (
     <>
-      <div style={{ marginTop: '4rem' }}>
+      <div className='container'>
         <h1 className='text-center'>this is projects</h1>
       </div>
       <div>this is project loop</div>

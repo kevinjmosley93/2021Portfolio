@@ -26,10 +26,10 @@ body {
   place-items: center;
 }
 
-.leftContent img {
+.rightContent img {
   object-fit: contain;
 }
-.rightContent {
+.leftContent {
   height: 80%;
   padding: 0.8rem;
   line-height: 2.2;
@@ -37,10 +37,10 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.rightContent h1 {
+.leftContent h1 {
   font-size: 2rem;
 }
-.rightContent p {
+.leftContent p {
   font-size: 1rem;
 }
 @media only screen and (max-width: 786px) {
@@ -53,17 +53,19 @@ body {
     padding-top: 2rem;
   }
 
-  .rightContent {
+  .leftContent {
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .rightContent h1 {
+  .leftContent h1 {
     font-size: 1.5rem;
-    text-align: center;
   }
-  .rightContent p {
-    font-size: 0.7rem;
+  .leftContent p {
+    font-size: 1rem;
+  }
+  .rightContent img {
+    margin-bottom: 1rem;
   }
 }

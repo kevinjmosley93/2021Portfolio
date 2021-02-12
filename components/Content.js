@@ -4,13 +4,6 @@ export default function Hero() {
   return (
     <div className='wrapper container'>
       <div className='leftContent'>
-        <Image
-          height='300px'
-          width='300px'
-          src='https://i.imgur.com/Atjc3ra.png'
-        />
-      </div>
-      <div className='rightContent'>
         <h1>Hey, I'm Kevin!</h1>
         <p>
           After 5 years in the U.S. Navy, I now build modern Web Applications
@@ -28,6 +21,13 @@ export default function Hero() {
             View Resume
           </Button>
         </p>
+      </div>
+      <div className='rightContent'>
+        <Image
+          height='300px'
+          width='300px'
+          src='https://i.imgur.com/Atjc3ra.png'
+        />
       </div>
     </div>
   )
