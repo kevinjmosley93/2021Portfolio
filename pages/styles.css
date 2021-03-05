@@ -6,6 +6,9 @@ body {
 .btn:hover {
   text-decoration: none;
 }
+h1 {
+  font-size: 3.5rem;
+}
 
 .navbar-toggler,
 .navbar-toggler:focus,
@@ -19,15 +22,15 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row: 1fr;
   grid-column-gap: 3rem;
-  height: 500px;
   width: 100%;
   place-items: center;
+  margin-bottom: 1rem;
 }
 
 .rightContent img {
   object-fit: contain;
+  padding: 1rem;
 }
 .leftContent {
   height: 80%;
@@ -37,9 +40,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.leftContent h1 {
-  font-size: 2rem;
-}
+
 .leftContent p {
   font-size: 1rem;
 }
@@ -49,7 +50,6 @@ body {
     grid-template-columns: 1fr;
     grid-row: 1fr;
     grid-row-gap: 1rem;
-    align-items: center;
     padding-top: 2rem;
   }
 
@@ -59,13 +59,11 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .leftContent h1 {
-    font-size: 1.5rem;
+  h1 {
+    font-size: 2.5rem;
   }
   .leftContent p {
     font-size: 1rem;
-  }
-  .rightContent img {
-    margin-bottom: 1rem;
+    width: auto;
   }
 }

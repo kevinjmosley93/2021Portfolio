@@ -24,8 +24,8 @@ export default function Hero() {
       </div>
       <div className='rightContent'>
         <Image
-          height='300px'
-          width='300px'
+          height='600px'
+          width='600px'
           src='https://i.imgur.com/Atjc3ra.png'
         />
       </div>

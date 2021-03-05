@@ -1,22 +1,11 @@
 import React from 'react'
-
-const skills = [
-  'HTML',
-  'CSS',
-  'Javascript',
-  'React',
-  'Node',
-  'Python',
-  'nextjs'
-]
+import { ProjectCard } from 'components/ProjectCard'
 
 const Projects = () => {
   return (
     <>
-      <div className='container'>
-        <h1 className='text-center'>this is projects</h1>
-      </div>
-      <div>this is project loop</div>
+      <h1 className='text-center'>View My Projects</h1>
+      <ProjectCard />
     </>
   )
 }
