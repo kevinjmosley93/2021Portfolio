@@ -9,6 +9,9 @@ body {
 h1 {
   font-size: 3.5rem;
 }
+img {
+  width: 100%;
+}
 
 .navbar-toggler,
 .navbar-toggler:focus,
@@ -19,51 +22,8 @@ h1 {
   box-shadow: none;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 3rem;
-  width: 100%;
-  place-items: center;
-  margin-bottom: 1rem;
-}
-
-.rightContent img {
-  object-fit: contain;
-  padding: 1rem;
-}
-.leftContent {
-  height: 80%;
-  padding: 0.8rem;
-  line-height: 2.2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.leftContent p {
-  font-size: 1rem;
-}
 @media only screen and (max-width: 786px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row: 1fr;
-    grid-row-gap: 1rem;
-    padding-top: 2rem;
-  }
-
-  .leftContent {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  h1 {
-    font-size: 2.5rem;
-  }
-  .leftContent p {
-    font-size: 1rem;
-    width: auto;
+  img {
+    margin-top: 4rem;
   }
 }
