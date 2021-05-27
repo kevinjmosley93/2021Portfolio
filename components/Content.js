@@ -23,9 +23,9 @@ export default function Hero() {
         </Col>
         <Col md='5'>
           <Image
-            height='600px'
-            width='600px'
-            src='https://i.imgur.com/Atjc3ra.png'
+            height='500px'
+            width='500px'
+            src='https://i.imgur.com/xUuc3Fk.png'
           />
         </Col>
       </Row>

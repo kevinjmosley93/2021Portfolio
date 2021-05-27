@@ -1,23 +1,19 @@
 import React from 'react'
 import { ProjectCard } from 'components/ProjectCard'
 import { projects } from 'components/data/data'
-import { Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
-const Projects = () => {
+const Projects = ({ data }) => {
   return (
-    <>
+    <Container>
       <h1 className='text-center'>Projects</h1>
-      {projects.map((project, index) => {
-        console.log('this is skill:', project)
-        return (
-          <Container>
-            <Row>
-              <ProjectCard key={index} project={project} />
-            </Row>
-          </Container>
-        )
-      })}
-    </>
+      <Row>
+        {data.map(pro => {
+          console.log('this is skill:', pro)
+          return <ProjectCard key={pro.id} project={pro} />
+        })}
+      </Row>
+    </Container>
   )
 }
 

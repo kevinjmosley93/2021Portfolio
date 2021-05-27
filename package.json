@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
+    "airtable": "^0.11.1",
     "bootstrap": "^4.6.0",
     "framer-motion": "^3.3.0",
     "next": "^9.1.8-canary.11",
