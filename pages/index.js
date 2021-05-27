@@ -18,7 +18,7 @@ export default function Home({ data }) {
 
 export async function getServerSideProps(context) {
   console.log('this is context', context.req.headers.referer)
-  const res = await fetch(`http://localhost:3000/api/get-projects`)
+  const res = await fetch(`${window.location.hostname}/api/get-projects`)
   const data = await res.json()
 
   return {
