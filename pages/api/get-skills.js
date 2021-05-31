@@ -1,4 +1,4 @@
-import { table, minifyRecords } from '../../lib/airtable'
+import { table, minifyRecords } from '../../lib/skills'
 
 export default async (req, res) => {
   try {

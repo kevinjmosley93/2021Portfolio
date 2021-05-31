@@ -12,6 +12,10 @@ function MyApp({ Component, pageProps }) {
           type='image/png'
           href='https://img.icons8.com/clouds/344/code.png'
         />
+        <link
+          href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css'
+          rel='stylesheet'
+        />
       </Head>
       <Component {...pageProps} />
     </>

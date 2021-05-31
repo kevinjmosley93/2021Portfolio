@@ -15,11 +15,11 @@ const Projects = () => {
   }, [])
   return (
     <Container>
-      <h1 className='text-center'>Projects</h1>
+      <h1 className='text-center mb-5'>Projects</h1>
       <Row>
         {projectData.length > 0 &&
           projectData.map(pro => {
-            console.log('this is skill:', pro)
+            console.log('this is project:', pro)
             return <ProjectCard key={pro.id} project={pro} />
           })}
       </Row>
