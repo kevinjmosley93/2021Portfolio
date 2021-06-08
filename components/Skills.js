@@ -33,24 +33,21 @@ const Skills = () => {
       <div
         style={{
           height: 'auto',
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-around'
+          display: 'flex'
         }}>
         {skills &&
           skills.map(({ faIcon }, i) => {
             if (faIcon === undefined) return
             return (
               <div className='container' key={i}>
-                <div className='row d-flex flex-wrap flex-column justify-content-center align-items-center mb-5'>
+                <div className='d-flex flex-wrap flex-row mb-5'>
                   <img
                     style={{
                       height: '100px',
                       width: '100%',
                       objectFit: 'contain'
                     }}
-                    className='col'
+                    className=''
                     src={faIcon}
                   />
                 </div>
