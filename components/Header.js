@@ -8,11 +8,12 @@ const Header = () => {
         sticky='top'
         collapseOnSelect
         expand='lg'
-        style={{ background: 'rgba(23, 23, 23, .4)', color: '#ffffff' }}>
+        variant='dark'
+        style={{ background: 'rgb(23, 23, 23)', color: '#ffffff' }}>
         <div className='container'>
           <Navbar.Brand href='/'>
             <img
-              style={{ width: '155px', objectFit: 'cover', padding: '0' }}
+              style={{ width: '100px', objectFit: 'cover', padding: '0' }}
               alt='logo'
               src='https://i.imgur.com/ZwGNWOU.png'
             />

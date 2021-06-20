@@ -15,7 +15,7 @@ const Projects = () => {
   }, [])
   return (
     <Container id='projects'>
-      <h2 className='text-center py-5'>Projects</h2>
+      <h2 className='text-center py-3'>Projects</h2>
       <Row>
         {projectData.length > 0 &&
           projectData.map(pro => {

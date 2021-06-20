@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
+import { Container } from 'react-bootstrap'
 const Skills = () => {
   const [skillData, setData] = useState([])
   const fetchData = async () => {
@@ -17,28 +17,30 @@ const Skills = () => {
     faIcon
   }))
   return (
-    <section id='skills'>
-      <h2 className='text-center py-5'>Skills</h2>
-      <div>
-        <div className='row align-items-center w-100'>
-          {skills &&
-            skills.map(({ faIcon }, i) => {
-              if (faIcon === undefined) return
-              return (
-                <div key={i} className='col-4 p-3 justify-content-between'>
-                  <img
-                    style={{
-                      height: '75px',
-                      width: '100%',
-                      objectFit: 'contain'
-                    }}
-                    src={faIcon}
-                  />
-                </div>
-              )
-            })}
+    <section className='bg-success py-2'>
+      <Container id='skills'>
+        <h2 className='text-center py-3'>Skills</h2>
+        <div>
+          <div className='row align-items-center w-100'>
+            {skills &&
+              skills.map(({ faIcon }, i) => {
+                if (faIcon === undefined) return
+                return (
+                  <div key={i} className='col-4 p-3 justify-content-between'>
+                    <img
+                      style={{
+                        height: '75px',
+                        width: '100%',
+                        objectFit: 'contain'
+                      }}
+                      src={faIcon}
+                    />
+                  </div>
+                )
+              })}
+          </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

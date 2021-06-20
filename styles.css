@@ -27,6 +27,13 @@ img {
   font-size: xx-large;
   color: #27ae60;
 }
+/* .social-icons {
+  padding-top: auto;
+} */
+footer .social-icon {
+  font-size: xx-large;
+  color: #ffffff;
+}
 .social-icon:hover {
   color: #1b6e3e;
 }
@@ -41,9 +48,6 @@ img {
   outline: none;
   border: none;
   box-shadow: none;
-}
-.navbar-toggler-icon {
-  background-color: #ffffff;
 }
 @media only screen and (max-width: 786px) {
   img {

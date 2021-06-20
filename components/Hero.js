@@ -28,7 +28,7 @@ export default function Hero() {
               className='social-icon'
               href='https://www.facebook.com/kevin.mosley.399/'
               target='_blank'>
-              <i className='fa fa-facebook-f'></i>
+              <i className='fa fa-facebook'></i>
             </a>
             <a
               className='social-icon'
