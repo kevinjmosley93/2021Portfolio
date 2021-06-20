@@ -32,7 +32,6 @@ const Skills = () => {
                       width: '100%',
                       objectFit: 'contain'
                     }}
-                    className='rounded-circle'
                     src={faIcon}
                   />
                 </div>
