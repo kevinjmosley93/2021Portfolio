@@ -5,7 +5,12 @@ export const Footer = () => {
   return (
     <footer className='bg-success py-5'>
       <div className='text-center'>
-        <h6 className='mx-auto pb-4'>
+        <img
+          style={{ width: '150px', objectFit: 'cover', padding: '0' }}
+          src='https://i.imgur.com/ZeBssMc.png'
+          alt='logo'
+        />
+        <h6 className='mx-auto pb-4 font-weight-bold'>
           {currentYear} All Rights Reserved Kevin J Mosley | Software Engineer
         </h6>
         <div className='social-icons container d-flex flex-row justify-content-between w-50 pt-3 '>

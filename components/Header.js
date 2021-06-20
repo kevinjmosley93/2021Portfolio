@@ -15,7 +15,7 @@ const Header = () => {
             <img
               style={{ width: '100px', objectFit: 'cover', padding: '0' }}
               alt='logo'
-              src='https://i.imgur.com/ZwGNWOU.png'
+              src='https://i.imgur.com/fV6tLzm.png'
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />

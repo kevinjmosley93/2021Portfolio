@@ -10,6 +10,7 @@
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "airtable": "^0.11.1",
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.6.0",
     "font-awesome": "^4.7.0",
     "next": "^9.1.8-canary.11",

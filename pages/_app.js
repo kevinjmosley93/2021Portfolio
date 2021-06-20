@@ -18,6 +18,11 @@ function MyApp({ Component, pageProps }) {
           content='Tech, Software, Coding, Portfolio, Frontend Developer, Backend Developer, Shopify App Development'
         />
         <meta name='author' content='MMGThemes' />
+        <link
+          rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
+        />
+
         <link rel='preconnect' href='https://fonts.gstatic.com' />
         <link
           href='https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap'

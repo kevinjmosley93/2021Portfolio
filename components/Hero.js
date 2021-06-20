@@ -5,11 +5,12 @@ export default function Hero() {
     <Container>
       <Row className='my-2 align-items-center'>
         <Col md='7'>
-          <h1>Hey, I'm Kevin!</h1>
+          <h1 className='font-weight-bold'>Hey, I'm Kevin!</h1>
           <p style={{ lineHeight: '2.5rem' }} className='my-5'>
             After 5 years in the U.S. Navy, I now build modern Web Applications
-            with mostly <span className='badge-col'>React</span> &{' '}
-            <span className='badge-col'>Node.js</span>
+            with mostly{' '}
+            <span className='font-weight-bold badge-col'>React</span> &{' '}
+            <span className='font-weight-bold badge-col'>Node.js</span>
           </p>
           <div className='social-icons d-flex flex-row justify-content-between w-50'>
             <a
