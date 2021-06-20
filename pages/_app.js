@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Head from 'next/head'
-import './styles.css'
+import '../styles.css'
 function MyApp({ Component, pageProps }) {
   return (
     <>

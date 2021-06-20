@@ -1,7 +1,11 @@
 @import 'reset.css';
 
 body {
-  background-color: #9fa5ac;
+  background-color: #6c757d;
+  color: rgb(14, 13, 13);
+}
+.bg {
+  background-color: #212529;
 }
 .btn:hover {
   text-decoration: none;
