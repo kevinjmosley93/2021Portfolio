@@ -19,7 +19,9 @@ const Skills = () => {
   return (
     <section className='bg-success py-4'>
       <Container id='skills'>
-        <h2 className='font-weight-bold text-center'>Skills</h2>
+        <h2 className='font-weight-bold text-center animate__fadeInDown animate__animated'>
+          Skills
+        </h2>
         <div>
           <div style={{ fontSize: '1.5rem' }} className='row text-center w-100'>
             {skills &&
