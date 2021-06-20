@@ -17,18 +17,18 @@ const Skills = () => {
     faIcon
   }))
   return (
-    <>
-      <h1 className='text-center mb-3'>Skills</h1>
+    <section id='skills'>
+      <h2 className='text-center py-5'>Skills</h2>
       <div>
         <div className='row align-items-center w-100'>
           {skills &&
             skills.map(({ faIcon }, i) => {
               if (faIcon === undefined) return
               return (
-                <div key={i} className='col-4 p-3'>
+                <div key={i} className='col-4 p-3 justify-content-between'>
                   <img
                     style={{
-                      height: '100px',
+                      height: '75px',
                       width: '100%',
                       objectFit: 'contain'
                     }}
@@ -39,7 +39,7 @@ const Skills = () => {
             })}
         </div>
       </div>
-    </>
+    </section>
   )
 }
 

@@ -10,12 +10,12 @@ const Projects = () => {
     console.log('this is data', data)
     setData(data)
   }
-  useEffect(() => {
-    fetchData()
+  useEffect(async () => {
+    await fetchData()
   }, [])
   return (
-    <Container>
-      <h1 className='text-center mb-5'>Projects</h1>
+    <Container id='projects'>
+      <h2 className='text-center py-5'>Projects</h2>
       <Row>
         {projectData.length > 0 &&
           projectData.map(pro => {

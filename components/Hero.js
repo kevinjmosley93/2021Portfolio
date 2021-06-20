@@ -3,15 +3,41 @@ import { Col, Container, Image, Row, Button } from 'react-bootstrap'
 export default function Hero() {
   return (
     <Container>
-      <Row className='my-5 align-items-center'>
+      <Row className='my-2 align-items-center'>
         <Col md='7'>
           <h1>Hey, I'm Kevin!</h1>
           <p style={{ lineHeight: '2.5rem' }} className='my-5'>
             After 5 years in the U.S. Navy, I now build modern Web Applications
-            with mostly <span className='bg-dark text-info'>React</span> &{' '}
-            <span className='bg-dark text-info'>Node.js</span>
+            with mostly <span className='badge-col'>React</span> &{' '}
+            <span className='badge-col'>Node.js</span>
           </p>
-          <Button
+          <div className='social-icons d-flex flex-row justify-content-between w-50'>
+            <a
+              className='social-icon'
+              href='https://www.linkedin.com/in/kevinjmosley/'
+              target='_blank'>
+              <i className='fa fa-linkedin-in'></i>
+            </a>
+            <a
+              className='social-icon'
+              href='https://github.com/kevinjmosley93'
+              target='_blank'>
+              <i className='fa fa-github'></i>
+            </a>
+            <a
+              className='social-icon'
+              href='https://www.facebook.com/kevin.mosley.399/'
+              target='_blank'>
+              <i className='fa fa-facebook-f'></i>
+            </a>
+            <a
+              className='social-icon'
+              href='mailto:kevinjmosley93@gmail.com'
+              target='_blank'>
+              <i className='fa fa-envelope'></i>
+            </a>
+          </div>
+          {/* <Button
             as='a'
             target='_blank'
             href='https://drive.google.com/file/d/1V81jhvK0xJHTDbujs5h8SrWLtFTx2SM6/view?usp=sharing'
@@ -19,7 +45,7 @@ export default function Hero() {
             variant='link'
             size='lg'>
             View Resume
-          </Button>
+          </Button> */}
         </Col>
         <Col md='5'>
           <Image

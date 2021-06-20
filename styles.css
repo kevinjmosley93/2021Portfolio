@@ -1,22 +1,39 @@
 @import 'reset.css';
 
 body {
-  background-color: #6c757d;
-  color: rgb(14, 13, 13);
+  background-color: #171717;
+  color: #ffffff;
 }
 .bg {
   background-color: #212529;
 }
 .btn:hover {
   text-decoration: none;
+
+  background-color: #1b6e3e;
 }
-h1 {
+.btn,
+.badge-col {
+  background-color: #27ae60;
+  color: #ffffff !important;
+}
+.badge h1 {
   font-size: 3.5rem;
 }
 img {
   width: 100%;
 }
-
+.social-icon {
+  font-size: xx-large;
+  color: #27ae60;
+}
+.social-icon:hover {
+  color: #1b6e3e;
+}
+.navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
