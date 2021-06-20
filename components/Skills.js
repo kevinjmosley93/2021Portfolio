@@ -26,7 +26,7 @@ const Skills = () => {
               skills.map(({ faIcon, name }, i) => {
                 if (faIcon === undefined) return
                 return (
-                  <div key={i} className='col-4 p-2 justify-content-between'>
+                  <div key={i} className='col-4 p-3 align-items-center'>
                     <img
                       style={{
                         height: '75px',

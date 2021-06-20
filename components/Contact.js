@@ -4,7 +4,9 @@ import { Container, Button } from 'react-bootstrap'
 export const Contact = () => {
   return (
     <Container id='contact'>
-      <h2 className='font-weight-bold py-3 text-center'>Contact Me</h2>
+      <h2 className='font-weight-bold py-3 text-center animate__fadeInDown animate__animated'>
+        Contact Me
+      </h2>
       <div className='row '>
         <div className='col-lg-7 mx-auto'>
           <div className='mt-2 mx-auto p-4 '>

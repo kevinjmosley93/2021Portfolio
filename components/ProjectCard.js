@@ -30,11 +30,11 @@ export const ProjectCard = ({ project }) => {
           {body}
         </p>
         <div className='row justify-content-around container'>
-          <a href={liveLink} className='btn font-weight-bold'>
+          <a target='_blank' href={liveLink} className='btn font-weight-bold'>
             <i className='fa fa-link'></i> Visit Site
           </a>
           {repo && (
-            <a href={repo} className='btn font-weight-bold'>
+            <a target='_blank' href={repo} className='btn font-weight-bold'>
               <i className='fa fa-github'></i> Github
             </a>
           )}

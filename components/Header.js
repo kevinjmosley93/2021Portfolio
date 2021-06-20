@@ -14,7 +14,9 @@ const Header = () => {
           color: '#ffffff'
         }}>
         <Container className='font-weight-bold'>
-          <Navbar.Brand className='p-0 m-0 ' href='/'>
+          <Navbar.Brand
+            className='p-0 m-0 animate__animated animate__fadeInLeft'
+            href='/'>
             <img
               style={{
                 width: '100px',
@@ -27,7 +29,9 @@ const Header = () => {
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-          <Navbar.Collapse id='responsive-navbar-nav'>
+          <Navbar.Collapse
+            id='responsive-navbar-nav'
+            className='animate__fadeInRight animate__animated'>
             <Nav className='ml-auto text-center'>
               <Nav.Link href='#about'>About</Nav.Link>
               <Nav.Link href='#projects'>Projects</Nav.Link>

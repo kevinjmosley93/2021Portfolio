@@ -15,7 +15,9 @@ const Projects = () => {
   }, [])
   return (
     <Container id='projects'>
-      <h2 className='font-weight-bold text-center py-2'>Projects</h2>
+      <h2 className='font-weight-bold text-center py-2 animate__fadeInDown animate__animated'>
+        Projects
+      </h2>
       <Row>
         {projectData.length > 0 &&
           projectData.map(pro => {

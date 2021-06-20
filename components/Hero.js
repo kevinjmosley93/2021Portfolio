@@ -4,11 +4,11 @@ export default function Hero() {
   return (
     <Container>
       <Row className='my-2 align-items-center'>
-        <Col md='7'>
+        <Col md='7' className='animate__fadeInTopLeft animate__animated'>
           <h1 className='font-weight-bold'>Hey, I'm Kevin!</h1>
           <p style={{ lineHeight: '2.5rem' }} className='my-5'>
             After 5 years in the U.S. Navy, I now build modern Web Applications
-            with mostly
+            with mostly{' '}
             <span className='font-weight-bold badge-col'>React</span> &{' '}
             <span className='font-weight-bold badge-col'>Node.js</span>
           </p>
@@ -48,7 +48,7 @@ export default function Hero() {
             View Resume
           </Button> */}
         </Col>
-        <Col md='5'>
+        <Col md='5' className='animate__fadeInTopRight animate__animated'>
           <Image
             className='rounded-circle'
             height='500px'
