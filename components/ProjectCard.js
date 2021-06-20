@@ -7,7 +7,7 @@ export const ProjectCard = ({ project }) => {
   } = project
 
   return (
-    <Col className='px-3 mb-2' md={4}>
+    <Col className='px-3 mb-3' md={4}>
       <Container>
         <img
           style={{
@@ -19,24 +19,22 @@ export const ProjectCard = ({ project }) => {
           className='img-fluid'
           alt={title}
         />
-        <h5 className='title text-center my-2'>{title}</h5>
+        <h5 className='font-weight-bold text-center my-3'>{title}</h5>
         <span className='row justify-content-around'>
           {builtWith.length > 0 &&
             builtWith.map(val => (
-              <h6 className='subtitle mb-2 text-muted badge badge-col'>
-                {val}
-              </h6>
+              <h6 className='p-1 font-weight-bold badge badge-col'>{val}</h6>
             ))}
         </span>
         <p style={{ lineHeight: '2rem' }} className='text text-left'>
           {body}
         </p>
-        <div className='row justify-content-between'>
-          <a href={liveLink} className='btn mr-2'>
+        <div className='row justify-content-around container'>
+          <a href={liveLink} className='btn font-weight-bold'>
             <i className='fa fa-link'></i> Visit Site
           </a>
           {repo && (
-            <a href={repo} className='btn '>
+            <a href={repo} className='btn font-weight-bold'>
               <i className='fa fa-github'></i> Github
             </a>
           )}

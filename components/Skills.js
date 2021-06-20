@@ -17,16 +17,16 @@ const Skills = () => {
     faIcon
   }))
   return (
-    <section className='bg-success py-2'>
+    <section className='bg-success py-4'>
       <Container id='skills'>
-        <h2 className='font-weight-bold text-center py-3'>Skills</h2>
+        <h2 className='font-weight-bold text-center'>Skills</h2>
         <div>
           <div style={{ fontSize: '1.5rem' }} className='row text-center w-100'>
             {skills &&
               skills.map(({ faIcon, name }, i) => {
                 if (faIcon === undefined) return
                 return (
-                  <div key={i} className='col-4 p-3 justify-content-between'>
+                  <div key={i} className='col-4 p-2 justify-content-between'>
                     <img
                       style={{
                         height: '75px',

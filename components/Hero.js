@@ -8,7 +8,7 @@ export default function Hero() {
           <h1 className='font-weight-bold'>Hey, I'm Kevin!</h1>
           <p style={{ lineHeight: '2.5rem' }} className='my-5'>
             After 5 years in the U.S. Navy, I now build modern Web Applications
-            with mostly{' '}
+            with mostly
             <span className='font-weight-bold badge-col'>React</span> &{' '}
             <span className='font-weight-bold badge-col'>Node.js</span>
           </p>

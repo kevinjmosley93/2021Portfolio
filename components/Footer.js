@@ -3,17 +3,21 @@ import React from 'react'
 export const Footer = () => {
   const currentYear = new Date().getFullYear()
   return (
-    <footer className='bg-success py-5'>
+    <footer className='bg-success'>
       <div className='text-center'>
         <img
-          style={{ width: '150px', objectFit: 'cover', padding: '0' }}
-          src='https://i.imgur.com/ZeBssMc.png'
+          style={{
+            width: '200px',
+            height: '300px',
+            objectFit: 'contain',
+            padding: '0',
+            margin: '0'
+          }}
+          className='pb-3'
+          src='https://i.imgur.com/77wDnMB.png'
           alt='logo'
         />
-        <h6 className='mx-auto pb-4 font-weight-bold'>
-          {currentYear} All Rights Reserved Kevin J Mosley | Software Engineer
-        </h6>
-        <div className='social-icons container d-flex flex-row justify-content-between w-50 pt-3 '>
+        <div className='social-icons container d-flex flex-row justify-content-between w-50 pb-5 '>
           <a
             className='social-icon'
             href='https://www.linkedin.com/in/kevinjmosley/'
@@ -39,6 +43,10 @@ export const Footer = () => {
             <i className='fa fa-envelope'></i>
           </a>
         </div>
+
+        <h6 className='mx-auto my-0 pb-2 font-weight-bold'>
+          {currentYear} All Rights Reserved Kevin J Mosley | Software Engineer
+        </h6>
       </div>
     </footer>
   )

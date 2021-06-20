@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Button } from 'react-bootstrap'
 
 export const Contact = () => {
   return (
@@ -99,12 +99,14 @@ export const Contact = () => {
                         </div>
                       </div>
                       <div className='col-md-12'>
-                        {' '}
-                        <input
-                          type='submit'
-                          className='btn btn-info btn-send pt-2 btn-block '
-                          value='Send Message'
-                        />{' '}
+                        <Button
+                          as='a'
+                          href=''
+                          className='font-weight-bold d-block'
+                          variant='link'
+                          size='md'>
+                          Send Message
+                        </Button>
                       </div>
                     </div>
                   </div>

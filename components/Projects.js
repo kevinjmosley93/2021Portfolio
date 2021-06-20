@@ -15,8 +15,8 @@ const Projects = () => {
   }, [])
   return (
     <Container id='projects'>
-      <h2 className='font-weight-bold text-center py-3'>Projects</h2>
-      <Row className='my-3'>
+      <h2 className='font-weight-bold text-center py-2'>Projects</h2>
+      <Row>
         {projectData.length > 0 &&
           projectData.map(pro => {
             console.log('this is project:', pro)

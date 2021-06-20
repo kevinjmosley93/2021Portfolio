@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Navbar, Button } from 'react-bootstrap'
+import { Nav, Navbar, Button, Container } from 'react-bootstrap'
 
 const Header = () => {
   return (
@@ -7,15 +7,23 @@ const Header = () => {
       <Navbar
         sticky='top'
         collapseOnSelect
-        expand='lg'
+        expand='md'
         variant='dark'
-        style={{ background: 'rgb(23, 23, 23)', color: '#ffffff' }}>
-        <div className='container'>
-          <Navbar.Brand href='/'>
+        style={{
+          background: 'rgb(23, 23, 23)',
+          color: '#ffffff'
+        }}>
+        <Container className='font-weight-bold'>
+          <Navbar.Brand className='p-0 m-0 ' href='/'>
             <img
-              style={{ width: '100px', objectFit: 'cover', padding: '0' }}
+              style={{
+                width: '100px',
+                height: '85px',
+                objectFit: 'contain',
+                margin: '0'
+              }}
               alt='logo'
-              src='https://i.imgur.com/fV6tLzm.png'
+              src='https://i.imgur.com/Jzb3RB2.png'
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
@@ -29,14 +37,14 @@ const Header = () => {
               <Button
                 as='a'
                 href='#contact'
-                className=''
+                className='font-weight-bold'
                 variant='link'
                 size='md'>
                 Contact Me
               </Button>
             </Nav>
           </Navbar.Collapse>
-        </div>
+        </Container>
       </Navbar>
     </>
   )
