@@ -10,20 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Kevin J Mosley | Software Engineer </title>
-          <meta
-            name='viewport'
-            content='initial-scale=1.0, width=device-width'
-          />
-          <meta
-            name='description'
-            content='Kevin J Mosley is a U.S. Navy veteran/Software Engineer with a knack for leadership and attention to detail in everything he does. '
-          />
-          <meta
-            name='keywords'
-            content='Tech, Software, Coding, Portfolio, Frontend Developer, Backend Developer, Shopify App Development'
-          />
-          <meta name='author' content='MMGThemes' />
           <link
             rel='stylesheet'
             href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
