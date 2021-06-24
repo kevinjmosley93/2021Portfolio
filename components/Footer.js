@@ -44,7 +44,9 @@ export const Footer = () => {
           </a>
         </div>
 
-        <h6 className='mx-auto my-0 pb-3 font-weight-bold'>
+        <h6
+          style={{ fontSize: '.6rem' }}
+          className='mx-auto my-0 pb-3 font-weight-bold'>
           {currentYear} All Rights Reserved Kevin J Mosley | Software Engineer
         </h6>
       </div>
