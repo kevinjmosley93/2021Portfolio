@@ -10,8 +10,8 @@ const Projects = () => {
     console.log('this is data', data)
     setData(data)
   }
-  useEffect(async () => {
-    await fetchData()
+  useEffect(() => {
+    fetchData()
   }, [])
   return (
     <Container id='projects'>
