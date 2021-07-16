@@ -12,7 +12,7 @@ export const ProjectCard = ({ project }) => {
 
   return (
     <Col style={{ height: '100%', width: '100%' }} md={12}>
-      <div className='row justify-content-center mb-3'>
+      <div className='row justify-content-center mb-5'>
         {/* <Image
             className='img-fluid img-top m-0 pb-2'
             src={img}
@@ -32,7 +32,7 @@ export const ProjectCard = ({ project }) => {
           alt={title}
         />
         <div className='col-md-7'>
-          <h5 className='font-weight-bold text-center my-2'>{title}</h5>
+          <h1 className='font-weight-bold text-center pb-2'>{title}</h1>
           <span className='row justify-content-between px-3'>
             {builtWith.length > 0 &&
               builtWith.map((val, idx) => (
@@ -48,14 +48,14 @@ export const ProjectCard = ({ project }) => {
             <a
               target='_blank'
               href={liveLink}
-              className='font-weight-bold pr-3 btn btn-lg btn-success'>
+              className='font-weight-bold pr-3 btn btn-md btn-success'>
               <i className='fa fa-link'></i> Live Site
             </a>
             {repo && (
               <a
                 target='_blank'
                 href={repo}
-                className='font-weight-bold btn btn-lg btn-success'>
+                className='font-weight-bold btn btn-md btn-success'>
                 <i className='fa fa-github'></i> Github
               </a>
             )}

@@ -15,7 +15,7 @@ const Projects = () => {
   }, [])
   return (
     <Container id='projects'>
-      <h2 className='font-weight-bold text-center py-2 animate__fadeInDown animate__animated'>
+      <h2 className='font-weight-bold text-center py-3 animate__fadeInDown animate__animated'>
         Projects
       </h2>
       <Row>
