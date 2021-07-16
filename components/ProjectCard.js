@@ -11,8 +11,8 @@ export const ProjectCard = ({ project }) => {
   } = project
 
   return (
-    <Col style={{ height: '100%', width: '100%' }} md={4}>
-      <div className='mb-5'>
+    <Col style={{ height: '100%', width: '100%' }} md={12}>
+      <div className='row justify-content-center mb-3'>
         {/* <Image
             className='img-fluid img-top m-0 pb-2'
             src={img}
@@ -22,34 +22,44 @@ export const ProjectCard = ({ project }) => {
           /> */}
         <img
           style={{
-            objectFit: 'fill',
+            objectFit: 'cover',
+            objectPosition: 'center',
             width: '100%',
-            height: '150px'
+            height: '100%'
           }}
           src={img}
-          className='img-fluid m-0'
+          className='img-fluid rounded m-0 col-md-5'
           alt={title}
         />
-        <h5 className='font-weight-bold text-center my-2'>{title}</h5>
-        <span className='row justify-content-around'>
-          {builtWith.length > 0 &&
-            builtWith.map(val => (
-              <h6 className='py-1 font-weight-bold badge badge-col'>{val}</h6>
-            ))}
-        </span>
-        <p style={{ lineHeight: '2rem' }} className='text-justify'>
-          {body}
-        </p>
-
-        <div className='row justify-content-around '>
-          <a target='_blank' href={liveLink} className='btn font-weight-bold'>
-            <i className='fa fa-link'></i> Visit Site
-          </a>
-          {repo && (
-            <a target='_blank' href={repo} className='btn font-weight-bold'>
-              <i className='fa fa-github'></i> Github
+        <div className='col-md-7'>
+          <h5 className='font-weight-bold text-center my-2'>{title}</h5>
+          <span className='row justify-content-between px-3'>
+            {builtWith.length > 0 &&
+              builtWith.map((val, idx) => (
+                <h6 key={idx} className='py-1 font-weight-bold badge badge-col'>
+                  {val}
+                </h6>
+              ))}
+          </span>
+          <p style={{ lineHeight: '2rem' }} className='text-justify'>
+            {body}
+          </p>
+          <span className='px-3 row justify-content-around'>
+            <a
+              target='_blank'
+              href={liveLink}
+              className='font-weight-bold pr-3 btn btn-lg btn-success'>
+              <i className='fa fa-link'></i> Live Site
             </a>
-          )}
+            {repo && (
+              <a
+                target='_blank'
+                href={repo}
+                className='font-weight-bold btn btn-lg btn-success'>
+                <i className='fa fa-github'></i> Github
+              </a>
+            )}
+          </span>
         </div>
       </div>
     </Col>

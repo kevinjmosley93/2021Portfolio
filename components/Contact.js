@@ -2,6 +2,62 @@ import React from 'react'
 import { Container, Button } from 'react-bootstrap'
 
 export const Contact = () => {
+  const [formInput, setFormInput] = React.useState({
+    form: {
+      firstName: '',
+      lastName: '',
+      email: '',
+      message: ''
+    }
+  })
+
+  const handleChange = e => {
+    const updatedField = { [e.target.name]: e.target.value }
+    setFormInput(currState => {
+      const updatedForm = { ...currState.form, ...updatedField }
+      // console.log({ updatedForm })
+      return { form: updatedForm }
+    })
+  }
+
+  const handleForm = async e => {
+    try {
+      e.preventDefault()
+      const { firstName, lastName, email, message } = formInput.form
+
+      const body = {
+        firstName,
+        lastName,
+        email,
+        message
+      }
+
+      const url = `${window.location.origin}/api/create-clients`
+      const params = {
+        method: 'POST',
+        body: JSON.stringify(body)
+      }
+      const res = await fetch(url, params)
+      const data = await res.json()
+      // console.log(data)
+      data &&
+        setFormInput({
+          form: {
+            firstName: '',
+            lastName: '',
+            email: '',
+            message: ''
+          }
+        })
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  const {
+    form: { firstName, lastName, email, message }
+  } = formInput
+
   return (
     <Container id='contact'>
       <h2 className='font-weight-bold py-3 text-center animate__fadeInDown animate__animated'>
@@ -12,76 +68,37 @@ export const Contact = () => {
           <div className='mt-2 mx-auto p-4 '>
             <div className=''>
               <Container>
-                <form id='contact-form' role='form'>
+                <form onSubmit={handleForm}>
                   <div className='controls'>
                     <div className='row'>
                       <div className='col-md-6'>
                         <div className='form-group'>
                           {' '}
-                          <label for='form_name'>Firstname *</label>{' '}
+                          <label htmlFor='form_name'>Firstname *</label>{' '}
                           <input
                             id='form_name'
                             type='text'
-                            name='name'
+                            onChange={handleChange}
+                            name='firstName'
+                            value={firstName}
                             className='form-control'
                             placeholder='Please enter your firstname *'
-                            required='required'
-                            data-error='Firstname is required.'
                           />{' '}
                         </div>
                       </div>
                       <div className='col-md-6'>
                         <div className='form-group'>
                           {' '}
-                          <label for='form_lastname'>Lastname *</label>{' '}
+                          <label htmlFor='form_lastname'>Lastname *</label>{' '}
                           <input
                             id='form_lastname'
                             type='text'
-                            name='surname'
+                            onChange={handleChange}
+                            name='lastName'
+                            value={lastName}
                             className='form-control'
                             placeholder='Please enter your lastname *'
-                            required='required'
-                            data-error='Lastname is required.'
                           />{' '}
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col-md-6'>
-                        <div className='form-group'>
-                          {' '}
-                          <label for='form_email'>Email *</label>{' '}
-                          <input
-                            id='form_email'
-                            type='email'
-                            name='email'
-                            className='form-control'
-                            placeholder='Please enter your email *'
-                            required='required'
-                            data-error='Valid email is required.'
-                          />{' '}
-                        </div>
-                      </div>
-                      <div className='col-md-6'>
-                        <div className='form-group'>
-                          {' '}
-                          <label for='form_need'>
-                            Please specify your need *
-                          </label>{' '}
-                          <select
-                            id='form_need'
-                            name='need'
-                            className='form-control'
-                            required='required'
-                            data-error='Please specify your need.'>
-                            <option value='' selected disabled>
-                              --Select Your Service--
-                            </option>
-                            <option>Web Development</option>
-                            <option>App Development</option>
-                            <option>Job Interview</option>
-                            <option>Other</option>
-                          </select>{' '}
                         </div>
                       </div>
                     </div>
@@ -89,22 +106,40 @@ export const Contact = () => {
                       <div className='col-md-12'>
                         <div className='form-group'>
                           {' '}
-                          <label for='form_message'>Message *</label>{' '}
+                          <label htmlFor='form_email'>Email *</label>{' '}
+                          <input
+                            id='form_email'
+                            type='email'
+                            onChange={handleChange}
+                            name='email'
+                            value={email}
+                            className='form-control'
+                            placeholder='Please enter your email *'
+                          />{' '}
+                        </div>
+                      </div>
+                    </div>
+                    <div className='row'>
+                      <div className='col-md-12'>
+                        <div className='form-group'>
+                          {' '}
+                          <label htmlFor='form_message'>Message *</label>{' '}
                           <textarea
                             id='form_message'
+                            type='text'
+                            onChange={handleChange}
                             name='message'
+                            value={message}
                             className='form-control'
                             placeholder='Write your message here.'
-                            rows='4'
-                            required='required'
-                            data-error='Please, leave us a message.'></textarea>{' '}
+                            rows='4'></textarea>{' '}
                         </div>
                       </div>
                       <div className='col-md-12'>
                         <Button
-                          as='a'
-                          href=''
-                          className='font-weight-bold d-block'
+                          as='button'
+                          type='submit'
+                          className='font-weight-bold btn-block'
                           variant='link'
                           size='md'>
                           Send Message

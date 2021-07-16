@@ -21,7 +21,7 @@ const Projects = () => {
       <Row>
         {projectData.length > 0 &&
           projectData.map(pro => {
-            console.log('this is project:', pro)
+            // console.log('this is project:', pro)
             return <ProjectCard key={pro.id} project={pro} />
           })}
       </Row>

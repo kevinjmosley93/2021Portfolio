@@ -5,7 +5,7 @@ const Skills = () => {
   const fetchData = async () => {
     const res = await fetch(`${window.location.href}api/get-skills`)
     const data = await res.json()
-    console.log('this is data', data)
+    // console.log('this is data', data)
     setData(data)
   }
   useEffect(() => {
