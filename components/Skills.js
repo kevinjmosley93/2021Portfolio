@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Loading from '../components/Loading'
 import { Container } from 'react-bootstrap'
 const Skills = () => {
   const [skillData, setData] = useState([])
@@ -16,6 +17,14 @@ const Skills = () => {
     name,
     faIcon
   }))
+
+  if (skills.length < 1)
+    return (
+      <div className='conatiner py-3'>
+        <Loading />
+      </div>
+    )
+
   return (
     <section className='bg-success py-4'>
       <Container id='skills'>

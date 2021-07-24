@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ProjectCard } from 'components/ProjectCard'
 import { Col, Container, Row } from 'react-bootstrap'
+import Loading from './Loading'
 
 const Projects = () => {
   const [projectData, setData] = useState([])
@@ -19,11 +20,16 @@ const Projects = () => {
         Projects
       </h2>
       <Row>
-        {projectData.length > 0 &&
+        {projectData.length > 0 ? (
           projectData.map(pro => {
             // console.log('this is project:', pro)
             return <ProjectCard key={pro.id} project={pro} />
-          })}
+          })
+        ) : (
+          <div className='container py-3'>
+            <Loading />
+          </div>
+        )}
       </Row>
     </Container>
   )
