@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 const Skills = () => {
   const [skillData, setData] = useState([])
   const fetchData = async () => {
-    const res = await fetch(`${window.location.href}api/get-skills`)
+    const res = await fetch(`${window.location.origin}/api/get-skills`)
     const data = await res.json()
     // console.log('this is data', data)
     setData(data)

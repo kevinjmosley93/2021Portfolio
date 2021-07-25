@@ -6,7 +6,7 @@ import Loading from './Loading'
 const Projects = () => {
   const [projectData, setData] = useState([])
   const fetchData = async () => {
-    const res = await fetch(`${window.location.href}api/get-projects`)
+    const res = await fetch(`${window.location.origin}/api/get-projects`)
     const data = await res.json()
     console.log('this is data', data)
     setData(data)
