@@ -20,8 +20,12 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap'
             rel='stylesheet'
           />
-
-          <link rel='icon' href='/favicon.png' />
+          <meta
+            property='og:image'
+            itemProp='image'
+            name='image'
+            content='/favicon-32x32.png'
+          />
           <link
             href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css'
             rel='stylesheet'
