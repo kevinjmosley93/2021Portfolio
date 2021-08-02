@@ -33,14 +33,30 @@ function MyApp({ Component, pageProps }) {
         </title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
 
-        <link rel='icon' href='/favicon.png' />
+        <link rel='icon' type='image/png' href='/favicon.png' />
 
-        <link rel='icon' href='/favicon-32x32.png' sizes='32x32' />
-        <link rel='icon' href='/android-chrome-192x192.png' sizes='192x192' />
-        <link rel='icon' href='/android-chrome-512x512.png' sizes='512x512' />
+        <link
+          rel='icon'
+          type='image/png'
+          href='/favicon-32x32.png'
+          sizes='32x32'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          href='/android-chrome-192x192.png'
+          sizes='192x192'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          href='/android-chrome-512x512.png'
+          sizes='512x512'
+        />
 
         <link
           rel='apple-touch-icon'
+          type='image/png'
           href='/apple-touch-icon.png'
           sizes='180x180'
         />
@@ -57,12 +73,18 @@ function MyApp({ Component, pageProps }) {
           name='description'
           content='Kevin J Mosley is a U.S. Navy veteran/Software Engineer with a knack for leadership and attention to detail in everything he does. '
         />
+        <meta property='og:image' name='image' content='/favicon.png' />
         <meta
-          property='og:image'
-          itemProp='image'
-          name='image'
-          content='/favicon.png'
+          property='twitter:title'
+          name='title'
+          content='Kevin J Mosley is a U.S. Navy veteran/Software Engineer with a knack for leadership and attention to detail in everything he does.'
         />
+        <meta
+          property='twitter:description'
+          name='description'
+          content='Kevin J Mosley is a U.S. Navy veteran/Software Engineer with a knack for leadership and attention to detail in everything he does. '
+        />
+        <meta property='twitter:image' name='image' content='/favicon.png' />
         <meta
           property='og:keywords'
           name='keywords'
