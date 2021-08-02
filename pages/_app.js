@@ -61,7 +61,7 @@ function MyApp({ Component, pageProps }) {
           property='og:image'
           itemProp='image'
           name='image'
-          content='/favicon-32x32.png'
+          content='/favicon.png'
         />
         <meta
           property='og:keywords'

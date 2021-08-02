@@ -24,7 +24,7 @@ class MyDocument extends Document {
             property='og:image'
             itemProp='image'
             name='image'
-            content='/favicon-32x32.png'
+            content='/favicon.png'
           />
           <link
             href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css'
