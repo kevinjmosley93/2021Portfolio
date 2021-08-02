@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
         </title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
 
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.png' />
 
         <link rel='icon' href='/favicon-32x32.png' sizes='32x32' />
         <link rel='icon' href='/android-chrome-192x192.png' sizes='192x192' />
@@ -61,7 +61,7 @@ function MyApp({ Component, pageProps }) {
           property='og:image'
           itemProp='image'
           name='image'
-          content='/favicon.ico'
+          content='/favicon-32x32.png'
         />
         <meta
           property='og:keywords'
