@@ -64,7 +64,7 @@ class MyDocument extends Document {
               width='1'
               style={{ display: 'none', zIndex: '-1234' }}
               alt='LinkedIn Tag Image'
-              src='https://px.ads.linkedin.com/collect/?pid=3705769&fmt=gif'
+              src={`https://px.ads.linkedin.com/collect/?pid=${process.env.NEXT_PUBLIC_LINKEDIN_TAG}&fmt=gif`}
             />{' '}
           </noscript>
         </Head>
