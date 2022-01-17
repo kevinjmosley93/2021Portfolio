@@ -28,67 +28,36 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>
-          Kevin J Mosley is a U.S. Navy veteran/Software Engineer with a knack
-          for leadership and attention to detail in everything he does.
+        Kevin J Mosley is a U.S. Navy veteran who got out of the military and found a successful career as a Software Engineer.
         </title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-
-        <link rel='icon' type='image/png' href='/favicon.png' />
-
-        <link
-          rel='icon'
-          type='image/png'
-          href='/favicon-32x32.png'
-          sizes='32x32'
-        />
-        <link
-          rel='icon'
-          type='image/png'
-          href='/android-chrome-192x192.png'
-          sizes='192x192'
-        />
-        <link
-          rel='icon'
-          type='image/png'
-          href='/android-chrome-512x512.png'
-          sizes='512x512'
-        />
-
-        <link
-          rel='apple-touch-icon'
-          type='image/png'
-          href='/apple-touch-icon.png'
-          sizes='180x180'
-        />
+        <meta property='og:type' content='website' />
         <link rel='canonical' href='https://kevinjmosley.com' />
 
-        <meta property='og:type' content='website' />
         <meta
           property='og:title'
           name='title'
-          content='Kevin J Mosley is a U.S. Navy veteran/Software Engineer with a knack for leadership and attention to detail in everything he does.'
+          content='Kevin J Mosley is a U.S. Navy veteran who got out of the military and found a successful career as a Software Engineer.'
         />
         <meta
           property='og:description'
           name='description'
-          content='Kevin J Mosley is a U.S. Navy veteran/Software Engineer with a knack for leadership and attention to detail in everything he does. '
+          content='Kevin J Mosley is a U.S. Navy veteran who got out of the military and found a successful career as a Software Engineer.'
         />
-        <meta property='og:image' name='image' content='/favicon.png' />
         <meta
           property='twitter:title'
           name='title'
-          content='Kevin J Mosley is a U.S. Navy veteran/Software Engineer with a knack for leadership and attention to detail in everything he does.'
+          content='Kevin J Mosley is a U.S. Navy veteran who got out of the military and found a successful career as a Software Engineer.'
         />
         <meta
           property='twitter:description'
           name='description'
-          content='Kevin J Mosley is a U.S. Navy veteran/Software Engineer with a knack for leadership and attention to detail in everything he does. '
+          content='Kevin J Mosley is a U.S. Navy veteran who got out of the military and found a successful career as a Software Engineer.'
         />
-        <meta property='twitter:image' name='image' content='/favicon.png' />
         <meta
           property='og:keywords'
           name='keywords'
-          content='Tech, Software, Coding, Portfolio, Frontend Developer, Backend Developer, Shopify App Development'
+          content='Getting Out Of The Military After 4 Years, Getting Out Of The Military Early, Getting Out Of The Navy, How To Get Out Of The Military And Be Successful, How To Get Out Of The Military Early, How To Get Out Of The Military Early With A Honorable Discharge, How To Get Out Of The Navy'
         />
         <meta property='og:author' name='author' content='MMGThemes' />
       </Head>
