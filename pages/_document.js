@@ -25,55 +25,6 @@ class MyDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
             rel="stylesheet"
           />
-          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-          <link
-            rel="apple-touch-icon-precomposed"
-            href="/sailor-152-273340.png"
-          />
-          <meta name="msapplication-TileColor" content="#ffffff" />
-          <meta
-            name="msapplication-TileImage"
-            content="/sailor-144-273340.png"
-          />
-          <link
-            rel="apple-touch-icon-precomposed"
-            sizes="152x152"
-            href="/sailor-152-273340.png"
-          />
-          <link
-            rel="apple-touch-icon-precomposed"
-            sizes="144x144"
-            href="/sailor-144-273340.png"
-          />
-
-          <link
-            rel="apple-touch-icon-precomposed"
-            sizes="120x120"
-            href="/sailor-120-273340.png"
-          />
-
-          <link
-            rel="apple-touch-icon-precomposed"
-            sizes="114x114"
-            href="/sailor-114-273340.png"
-          />
-
-          <link
-            rel="apple-touch-icon-precomposed"
-            sizes="72x72"
-            href="/sailor-72-273340.png"
-          />
-
-          <link
-            rel="apple-touch-icon-precomposed"
-            href="/sailor-57-273340.png"
-          />
-
-          <link
-            rel="icon"
-            href="/sailor-32-273340.png"
-            sizes="32x32"
-          />
 
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
