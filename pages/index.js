@@ -1,21 +1,29 @@
 import Skills from '@components/Skills'
 import Hero from '../components/Hero'
-import Header from '../components/Header'
 import Projects from '../components/Projects'
 import { About } from '@components/About'
 import { Contact } from '@components/Contact'
-import { Footer } from '@components/Footer'
+import Blog from '@components/Blog'
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <div>
-      <Header />
       <Hero />
       <About />
       <Projects />
       <Skills />
+      <Blog posts={posts} />
       <Contact />
-      <Footer />
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const res = await fetch('https://employthevets.com/api/get-blog')
+  const posts = await res.json()
+  return {
+    props: {
+      posts,
+    }
+  }
 }

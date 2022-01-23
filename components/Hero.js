@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <Container>
       <Row className='my-2 align-items-center'>
-        <Col md='7' className='animate__fadeInTopLeft animate__animated'>
+        <Col md='7' className=''>
           <h1 className='font-weight-bold'>Hey, I'm Kevin!</h1>
           <p style={{ lineHeight: '2.5rem' }} className='my-5'>
             After 5 years in the U.S. Navy, I now build modern Web Applications
@@ -48,7 +48,7 @@ export default function Hero() {
             View Resume
           </Button> */}
         </Col>
-        <Col md='5' className='animate__fadeInTopRight animate__animated'>
+        <Col md='5' className=''>
           <Image
             className='rounded-circle'
             height='500px'

@@ -3,8 +3,8 @@ import { Container } from 'react-bootstrap'
 
 export const About = () => {
   return (
-    <section className='bg-success py-5'>
-      <Container id='about'>
+    <section id='about' className='bg-success py-5'>
+      <Container >
         <h2 className='font-weight-bold text-center py-3 animate__fadeInDown animate__animated'>
           About Me
         </h2>

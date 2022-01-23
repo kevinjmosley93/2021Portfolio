@@ -1,7 +1,14 @@
 import React from 'react'
+import { useRouter } from 'next/router'
 import { Nav, Navbar, Button, Container } from 'react-bootstrap'
 
 const Header = () => {
+  const router = useRouter()
+  
+  const checkPathname = (string, isContact) => {
+    if (!router.pathname.includes('blog')) return string
+    return isContact ? '/#contact' : '/'
+  }
   return (
     <>
       <Navbar
@@ -15,7 +22,7 @@ const Header = () => {
         }}>
         <Container className='font-weight-bold'>
           <Navbar.Brand
-            className='p-0 m-0 animate__animated animate__fadeInLeft'
+            className='p-0 m-0'
             href='/'>
             <img
               style={{
@@ -31,16 +38,17 @@ const Header = () => {
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse
             id='responsive-navbar-nav'
-            className='animate__fadeInRight animate__animated'>
+            className=''>
             <Nav className='ml-auto text-center'>
-              <Nav.Link href='#about'>About</Nav.Link>
-              <Nav.Link href='#projects'>Projects</Nav.Link>
-              <Nav.Link href='#skills'>Skills</Nav.Link>
+              <Nav.Link href={checkPathname('#about')}>About</Nav.Link>
+              <Nav.Link href='/blog'>Blog</Nav.Link>
+              <Nav.Link href={checkPathname('#projects')}>Projects</Nav.Link>
+              <Nav.Link href={checkPathname('#skills')}>Skills</Nav.Link>
             </Nav>
             <Nav className='ml-2'>
               <Button
                 as='a'
-                href='#contact'
+                href={checkPathname('#contact', true)}
                 className='font-weight-bold'
                 variant='link'
                 size='md'>

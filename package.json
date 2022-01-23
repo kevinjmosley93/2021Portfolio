@@ -13,10 +13,12 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^4.6.0",
     "font-awesome": "^4.7.0",
+    "moment": "^2.29.1",
     "next": "^9.1.8-canary.11",
     "react": "^16.7.0",
     "react-bootstrap": "^1.4.3",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-markdown": "^8.0.0"
   },
   "devDependencies": {
     "file-loader": "^3.0.1",
