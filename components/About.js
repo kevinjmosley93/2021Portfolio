@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <section id='about' className='bg-success py-5'>
       <Container >
-        <h2 className='font-weight-bold text-center py-3 animate__fadeInDown animate__animated'>
+        <h2 className='font-weight-bold text-center py-3'>
           About Me
         </h2>
         <p style={{ lineHeight: '2rem' }} className='text-center'>

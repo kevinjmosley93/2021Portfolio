@@ -8,7 +8,7 @@ const Projects = () => {
   const fetchData = async () => {
     const res = await fetch(`${window.location.origin}/api/get-projects`)
     const data = await res.json()
-    console.log('this is data', data)
+    // console.log('this is data', data)
     setData(data)
   }
   useEffect(() => {
@@ -21,7 +21,7 @@ const Projects = () => {
       </h2>
       <Row>
         {projectData.length > 0 ? (
-          projectData.map(pro => {
+          projectData.sort((a, b) => a.fields.order - b.fields.order).map(pro => {
             // console.log('this is project:', pro)
             return <ProjectCard key={pro.id} project={pro} />
           })

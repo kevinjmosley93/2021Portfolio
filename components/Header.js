@@ -17,7 +17,7 @@ const Header = () => {
         expand='md'
         variant='dark'
         style={{
-          background: 'rgb(23, 23, 23)',
+          background: '#252525',
           color: '#ffffff'
         }}>
         <Container className='font-weight-bold'>
@@ -41,7 +41,7 @@ const Header = () => {
             className=''>
             <Nav className='ml-auto text-center'>
               <Nav.Link href={checkPathname('#about')}>About</Nav.Link>
-              <Nav.Link href='/blog'>Blog</Nav.Link>
+              {/* <Nav.Link href='/blog'>Blog</Nav.Link> */}
               <Nav.Link href={checkPathname('#projects')}>Projects</Nav.Link>
               <Nav.Link href={checkPathname('#skills')}>Skills</Nav.Link>
             </Nav>

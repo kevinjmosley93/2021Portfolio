@@ -1,7 +1,7 @@
 @import 'reset.css';
 
 body {
-  background-color: #171717;
+  background-color: #252525;
   color: #ffffff;
 }
 .bg {
@@ -48,6 +48,9 @@ footer .social-icon {
   outline: none;
   border: none;
   box-shadow: none;
+}
+.navbar-toggler-icon {
+  color: #fff !important;
 }
 .text-truncate-container {
   width: 100%;
